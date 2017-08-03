@@ -1,0 +1,38 @@
+
+$bg: #232630;
+$text-color: rgba(255, 255, 255, 0.6);
+$accent-color: #F74C4F;
+
+label {
+    color: $accent-color;
+    font-size: 1.5em;
+}
+
+input[type='text'], textarea {
+    background: none;
+    border: 1px solid 979797;
+    padding: 22px 15px;
+    color: $text-color;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.filled {
+    background: $accent-color;
+    color: $bg;
+    float: left;
+    border-radius: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 12px 22px;
+    margin-top: 40px;
+}
+
+.alert {
+    margin: -5px 0 20px 0;
+    color: $text-color;
+}

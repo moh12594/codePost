@@ -7,6 +7,10 @@ $text-color: rgba(255, 255, 255, 0.6);
 $accent-color: #F74C4F;
 $rgba-accent-color: rgba(247, 76, 79, 0.5);
 
+body, html {
+    height: 100%;
+}
+
 body {
     background: $bg;
     color: $text-color;
@@ -46,4 +50,49 @@ h1 {
     font-weight: 700;
     font-size: 4.2em;
     line-height: 1.2em;
+}
+
+.body-blur {
+    background: $bg url(/assets/images/details-bg.jpg) no-repeat top center !important;
+    background-size: 90% !important;
+    height: 100%;
+}
+
+.ellipse {
+    fill: $accent-color;
+}
+
+.arrow {
+    fill: $bg;
+}
+
+#group {
+    cursor: pointer;
+}
+
+#group:hover .ellipse {
+    animation: animateEllipse .5s forwards;
+    -webkit-animation: animateEllipse .5s forwards;
+}
+
+#group:hover .arrow {
+    fill: $accent-color;
+}
+
+.loader {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+@keyframes animateEllipse {
+    0% {
+        fill: $accent-color;
+    }
+    100% {
+        fill: $bg;
+    }
 }
